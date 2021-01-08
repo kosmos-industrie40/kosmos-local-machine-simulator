@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  machine-simulator:
+    image: harbor.kosmos.idcp.inovex.io/ondics/machine-simulator:rc2
+    build:
+      context: .
+      dockerfile: Dockerfile.machine-simulator
