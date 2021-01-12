@@ -33,11 +33,8 @@ TODO: Verweis auf die Doku in welcher VAULT_TOKEN, MY_PKI_URI und MQTT_BROKER_FQ
 Der Start der Komponenten erfolgt über ein Start-Script,
 welches als Referenz für die Komponenten verwendet werden kann.
 
-```bash
-git clone https://github.com/kosmos-industrie40/kosmos-local-startup.git
-cd kosmos-local-startup
-./start_all.sh
-```
+https://github.com/kosmos-industrie40/kosmos-local-startup
+
   
 ## Manueller Start der Komponente
 
