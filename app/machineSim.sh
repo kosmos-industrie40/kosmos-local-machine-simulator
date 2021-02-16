@@ -24,6 +24,7 @@ export MY_FQDN=`hostname -f`
 send_mqtt() {
     PAYLOAD=$(echo $PAYLOAD | jq ".data = [[\"$1\"],[\"$2\"],[\"$3\"],[\"$4\"],[\"$5\"],[\"$6\"]] | .timestamp = \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"")
     echo "====> Sending data"
+    #mosquitto_pub -h $MQTT_BROKER_FQDN -t "$TOPIC" -m "$PAYLOAD" --cafile /app/ca.pem --cert /app/cert.pem --key /app/key.pem -p 8883
     mosquitto_pub -h $MQTT_BROKER_FQDN -t "$TOPIC" -m "$PAYLOAD" --cafile /app/ca.pem --cert /app/cert.pem --key /app/key.pem -p 8883
 }
 

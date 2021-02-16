@@ -74,6 +74,11 @@ Der Aufruf erfolgt über ein shell-Script.
 
 > Es sind ebenfalls alle voraussetungen gegeben Nachrichten zu abonieren/empfangen, dies ist jedoch noch nicht implemtiert.
 
+## Bauen des Containers und Push 
+
+    $ docker login harbor.kosmos.idcp.inovex.io/ondics
+    $ docker-compose build
+    $ docker-compose push
   
 ## Credits
 
