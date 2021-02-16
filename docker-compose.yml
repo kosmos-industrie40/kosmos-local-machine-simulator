@@ -5,4 +5,4 @@ services:
     image: harbor.kosmos.idcp.inovex.io/ondics/machine-simulator:rc2
     build:
       context: .
-      dockerfile: Dockerfile.machine-simulator
+      #dockerfile: Dockerfile.machine-simulator
