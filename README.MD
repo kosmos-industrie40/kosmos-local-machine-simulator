@@ -39,8 +39,8 @@ https://github.com/kosmos-industrie40/kosmos-local-startup
 ## Manueller Start der Komponente
 
 Hinweise: 
-* domainname (${KOSMOS_LOCAL_MQTT_CLIENT_ROLE_FQDN}): Domain Name (DN) / Rolle wie konfiguriert in der Vault PKI
-* hostname (${MACHINE_NAME}): Hostname der Maschine
+* domainname ```(${KOSMOS_LOCAL_MQTT_CLIENT_ROLE_FQDN})```: Domain Name (DN) / Rolle wie konfiguriert in der Vault PKI
+* hostname ```(${MACHINE_NAME})```: Hostname der Maschine
 * Umgebungsvariablen
     * PAYLOAD: Die zu versendende Payload wird im Beispiel aus der Datei `MS_BCC_PAYLOAD.json` geholt
     * TOPIC: Auf dieses MQTT-Topic wird die Payload gesendet
